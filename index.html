@@ -1217,9 +1217,9 @@ code1 = code.replace('+','');
     type: "POST",
     url: 'otp.php',
     data: formdata,
-    error: function(){
-        alert("error");
-         console.log("error");
+    error: function(data){
+        alert(data);
+         console.log(data);
     },
     success: function(data)
     {
